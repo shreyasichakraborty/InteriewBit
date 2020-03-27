@@ -10,8 +10,8 @@ Input : 123
 Output : False
 
 */
-
-public class Solution {
+import java.util.*;
+public class PalindromeInteger {
     public int isPalindrome(int A) {
         if(A<0)
         return 0;
@@ -34,5 +34,16 @@ public class Solution {
         
         else
         return 1;
+    }
+    
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+	PalindromeInteger p = new PalindromeInteger();
+        int res = p.isPalindrome(n);
+        if(res==1)
+            System.out.println("True");
+        else
+            System.out.println("False");
     }
 }
